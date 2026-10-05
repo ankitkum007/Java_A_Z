@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+          <bean id="hospital" class="com.bean.Autowired.byType.Hospital">
+          <constructor-arg value="Apllo 24*7"></constructor-arg>
+          <constructor-arg value="Btm 2 stage"></constructor-arg>
+          <constructor-arg value="560071"></constructor-arg>
+          </bean>
+          
+          <bean id="patient" class="com.bean.Autowired.byType.Patient" autowire="byType">
+          		<property name="patientName" value="mukul"></property>
+          		<property name="patientNumber" value="0123456789"></property>
+          </bean>
+</beans>

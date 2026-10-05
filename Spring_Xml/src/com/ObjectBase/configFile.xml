@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="add" class="com.ObjectBase.Address">
+	        <property name="zipcode" value="560071"></property>
+	        <property name="city" value="bengaluru"></property>
+	        <property name="state" value="karnatka"></property>
+	        <property name="mobNum" value="1234567899"></property>
+        </bean>
+   
+        
+        <bean id="employe" class="com.ObjectBase.Employe">
+	        <property name="name" value="ankit"></property>
+	        <property name="roll" value="java devloper"></property>
+	        <property name="salary" value="55000"></property>
+	        <property name="projectName" value="erp backend"></property>
+	        <property name="address" ref="add"></property>
+        </bean>
+
+</beans>

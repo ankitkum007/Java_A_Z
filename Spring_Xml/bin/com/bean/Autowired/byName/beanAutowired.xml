@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+           <bean id="product" class="com.bean.Autowired.byName.Product">
+           <constructor-arg value="laptop"></constructor-arg>
+           <constructor-arg value="10"></constructor-arg>
+           <constructor-arg value="dell"></constructor-arg>
+           </bean>
+           
+           <bean id="cart" class="com.bean.Autowired.byName.Cart" autowire="byName">
+           <property name="numberOfProduct" value="100"></property>
+           </bean>
+           
+           <bean id="order" class="com.bean.Autowired.byName.Order" autowire="byName">
+           <property name="buy" value="dell leptop"></property>
+           </bean>
+</beans>

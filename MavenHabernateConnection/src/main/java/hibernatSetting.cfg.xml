@@ -1,0 +1,23 @@
+<hibernate-configuration>
+
+	<!--     a SessionFactory instance listed as /jndi/name -->
+	<session-factory>
+	
+	 <!--Database connection setting-->
+	    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Rock@123</property>
+		
+	<!--Hibernate Settings -->
+		<property name="hibernate.dialect.MySQL8Dialect"></property>
+    <!--Disable the log into console-->
+       <property name="hibernate.show_sql">false</property>
+       <property name="hibernate.format_sql">flase</property> 
+       
+    <!--Mapping class-->
+        <mapping class="com.connection.MavenHabernateConnection.Cart" />
+
+	</session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <bean id="college" class="com.collectionBase.College">
+     <property name="studentName">
+     <list>
+     <value>ankit</value>
+     <value>nukesh</value>
+     <value>sukesh</value>
+     </list>
+     </property>
+     
+     <property name="numbers">
+     <set>
+     <value>100</value>
+     <value>200</value>
+     <value>300</value>
+     <value>400</value>
+     </set>
+     </property>
+     
+     <property name="user">
+     <map>
+     <entry key="101" value="khalid"></entry>
+     </map>
+     </property>
+     </bean>
+     
+
+</beans>
